@@ -1,6 +1,7 @@
 namePrefix: kustomize-
 
 resources:
+- secret.yaml
 - argo-test-deployment.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

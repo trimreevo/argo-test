@@ -6,7 +6,7 @@ spec:
   type: ClusterIP
   ports:
     - port: 3000
-      targetPort : 80
+      targetPort : 4200
       protocol: TCP
   selector:
     app: argo-test

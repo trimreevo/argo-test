@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: argo-test-service
+  labels:
+    app: argo-test
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      targetPort : 80
+      protocol: TCP
+  selector:
+    app: argo-test

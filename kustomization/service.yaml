@@ -1,13 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: argo-test-service
-  labels:
-    app: argo-test
+  name: argo-test
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - port: 8080
+    - port: 8081
       targetPort : 80
       protocol: TCP
   selector:

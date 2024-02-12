@@ -15,9 +15,7 @@ spec:
         app: argo-test
     spec:
       containers:
-      - image: kubeevo.azurecr.io/kubenohttps:latest
+      - image: evok8sregistry.azurecr.io/evo-k8s-app:latest
         name: argo-test
         ports:
-        - containerPort: 80
-      imagePullSecrets:
-      - name: kubeevo-secret
+        - containerPort: 80      

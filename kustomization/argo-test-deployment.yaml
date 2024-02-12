@@ -18,6 +18,6 @@ spec:
       - image: evok8sregistry.azurecr.io/evo-k8s-app:v1
         name: argo-test
         ports:
-        - containerPort: 80
+        - containerPort: 4200
       imagePullSecrets:
       - name: k8spullsecret

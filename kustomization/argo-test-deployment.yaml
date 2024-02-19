@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argo-test
-  namespace: argocd
+  namespace: testapp
 spec:
   replicas: 1
   revisionHistoryLimit: 3
